@@ -5,13 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Servicio extends Model
+class Habitacion extends Model
 {
     use HasFactory;
-    protected $table = "servicios";
+    protected $table = "habitaciones";
     protected $fillable=array(
-        'Comida',
-        'Limpieza',
-        'Desinfeccion'
+        'disponibilidad_id',
+        'tipo_habitaciones_id',
+        'foto_id',
+        'no_habitaciones'
     );
 }
