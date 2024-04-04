@@ -17,8 +17,8 @@ return new class extends Migration
             $table->id();
             $table->foreignId('serviciosid')->references('id')->on('servicios');
             $table->string('tipo',255);
-            $table->double('precio');
-            $table->string('no_personas',255);
+            $table->decimal('precio',8,2);
+            $table->integer('no_personas');
             $table->timestamps();
         });
     }

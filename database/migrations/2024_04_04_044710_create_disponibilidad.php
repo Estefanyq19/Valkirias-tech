@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('disponibilidad', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('habitaciones_id')->references('id')->on('habitaciones');
+            //$table->foreignId('habitaciones_id')->references('id')->on('habitaciones');
             // $table->foreignId('reserva_id')->references('id')->on('reserva');
             $table->date('fecha_inicio');
             $table->date('fecha_salida');
